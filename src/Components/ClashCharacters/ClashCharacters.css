@@ -1,0 +1,516 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Permanent+Marker&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+a{
+    cursor: pointer;
+}
+
+header{
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 33px 9%;
+    /* background-color: rgba(52, 50, 50, 0.438); */
+}
+
+.logo{
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+}
+
+header ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+header ul a{
+    color: white;
+    margin-left: 60px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all 0.5s ease;
+}
+
+#menu-icon{
+    color: white;
+    font-size: 45px;
+    z-index: 100000;
+    cursor: pointer;
+    display: none;
+}
+
+section{
+    padding: 0 19%;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+
+.sec1{
+    background: linear-gradient(245.59deg, #4d9559 0%, #38703d 28.53%, #133917 75.52%);
+}
+
+
+.hero h5{
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.hero h4{
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.hero h1{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 90px;
+    color: white;
+    line-height: 1;
+    margin: 0 0 45px;
+}
+
+.hero p{
+    color: white;
+    font-size: 15px;
+    line-height: 1.9;
+    margin-bottom: 40px;
+}
+
+.image{
+    width: 700px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(20%);
+}
+
+.image img{
+    width: 650px;
+    transition: all 3s ease;
+}
+
+.image img:hover{
+    transform: scale(0.9);
+    opacity: 0.2;
+}
+
+.hero a{
+    display: inline-block;
+    color: white;
+    background: #0b8a20;
+    padding: 12px 30px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.4;
+    border-radius: 30px;
+    text-transform: uppercase;
+    margin-left: 10px;
+    transition: all 0.5s ease;
+}
+
+.hero a:hover{
+    background: transparent;
+    box-shadow: inset 0 0 0 1px white;
+}
+
+.hero a.play{
+    background: transparent;
+    box-shadow: inset 0 0 0 1px white;
+    transition: 0.3s;
+}
+
+.hero a.play:hover{
+    transform: scale(1.1);
+}
+
+.hero a.play i{
+    vertical-align: auto;
+    margin-right: 5px;
+}
+
+.icons{
+    position: fixed;
+    top: 50%;
+    padding: 0 9%;
+    z-index: 500;
+}
+
+.icons a{
+    color: white;
+    display: block;
+    margin: 26px 0;
+    font-size: 24px;
+    transition: all 0.5s ease;
+    position: relative;
+}
+
+.icons a:hover{
+    transform: scale(1.2);
+}
+
+.icons a .default{
+    transition: all 0.5s ease;
+}
+
+.icons a .hover{
+    opacity: 0;
+    transition: all 0.5s ease;
+    position: absolute;
+    left: 0;
+    transform: translateY(20%);
+}
+
+.icons a:hover .default{
+    opacity: 0;
+}
+
+.icons a:hover .hover{
+    opacity: 1;
+}
+
+.sec2{
+    background: linear-gradient(to left, #FFDD00, #FBB034);
+}
+
+.sec2 .image{
+    transform: translateX(0);
+}
+
+.sec2 .image img{
+    width: 580px;
+}
+
+.sec2 .hero .learn{
+    background: #ff8800;
+}
+
+.sec2 .hero .learn:hover{
+    background: transparent;
+}
+
+.sec3{
+    background: linear-gradient(to right, rgb(255, 102, 142), rgb(255, 31, 56));
+}
+
+.sec3 .hero .learn{
+    background-color: rgb(255, 0, 0);
+}
+
+.sec3 .hero .learn:hover {
+    background: transparent;
+}
+
+.sec4{
+    background: linear-gradient(87.4deg, rgb(83, 54, 54) 1.9%, rgb(200, 125, 76) 49.7%, rgb(255, 241, 165) 100.5%);
+}
+
+.sec4 .hero .learn {
+    background-color: rgb(222, 114, 42);
+}
+
+.sec4 .hero .learn:hover {
+    background: transparent;
+}
+
+.sec5 {
+    background: linear-gradient(to right, rgb(0, 52, 89) 30%, rgb(0, 168, 232) 120%);
+}
+
+.sec5 .hero .learn {
+    background-color: rgb(0, 183, 255);
+}
+
+.sec5 .hero .learn:hover {
+    background: transparent;
+}
+
+.sec6 {
+    background: linear-gradient(89.8deg, rgb(90, 43, 186) 11%, rgb(195, 67, 129) 83.4%);
+}
+
+.sec6 .hero .learn {
+    background-color: rgb(216, 0, 212);
+}
+
+.sec6 .hero .learn:hover {
+    background: transparent;
+}
+
+header ul a{
+    display: block;
+}
+
+header ul a::after{
+    content: "";
+    background-color: white;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin: auto;
+    transition: all 0.4s ease;
+}
+
+header ul a:hover::after{
+    width: 80%;
+}
+
+.btn1:hover{
+    color: #0b8a20;
+}
+
+.btn2:hover {
+    color: #ff8800;
+}
+
+.btn3:hover {
+    color: rgb(255, 0, 0);
+}
+
+.btn4:hover {
+    color: rgb(222, 114, 42);
+}
+
+.btn5:hover {
+    color: rgb(0, 183, 255);
+}
+
+.btn6:hover {
+    color: rgb(216, 0, 212);
+}
+
+.active{
+    background-color: white;
+    padding: 7px 15px;
+    border-radius: 25px;
+    color: transparent;
+}
+
+.btn1.active {
+    color: #0b8a20;
+}
+
+.btn2.active {
+    color: #ff8800;
+}
+
+.btn3.active {
+    color: rgb(255, 0, 0);
+}
+
+.btn4.active {
+    color: rgb(222, 114, 42);
+}
+
+.btn5.active {
+    color: rgb(0, 183, 255);
+}
+
+.btn6.active {
+    color: rgb(216, 0, 212);
+}
+
+@media (max-width: 1500px){
+    header{
+        padding: 15px 3%;
+    }
+    .icons{
+        padding: 0 3%;
+    }
+    section{
+        padding: 0 12%;
+    }
+}
+
+@media (max-width: 1380px){
+    .image{
+        transform: translateX(10%);
+    }
+    .image img{
+        width: 75%;
+        height: auto;
+        transform: translateX(0);
+    }
+    .sec2 .image {
+        transform: translateX(0);
+    }
+
+    .sec2 .image img {
+        width: 65%;
+        height: auto;
+    }
+    .hero h1{
+        font-size: 75px;
+        margin: 0;
+    }
+    .hero h5{
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 1200px){
+    section{
+        padding: 0 3%;
+        height: 100%;
+        gap: 1rem;
+        grid-template-columns: 1fr;
+    }
+    .hero{
+        padding-top: 115px;
+    }
+    .image{
+        transform: translateX(0);
+        text-align: center;
+        margin: 0 auto;
+    }
+    .image img{
+        width: 560px;
+        height: auto;
+    }
+    .sec2 .image img{
+        width: 500px;
+        height: auto;
+    }
+    .icons{
+        display: none;
+    }
+}
+
+@media (max-width: 900px){
+    .bx-menu{
+        transition: all 0.3s ease;
+    }
+
+    .bx-x{
+        transform: rotate(-180deg);
+        transition: all 0.3s ease;
+    }
+
+    #menu-icon{
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+    .logo{
+        position: absolute;
+        top: 10px;
+        top: -750px;
+        z-index: 9999999999;
+        transition: 0.5s;
+    }
+    .logo-open {
+        top: 0;
+    }
+    header ul{
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+        gap: 60px;
+        background: rgba(0, 0, 0, 0.8);
+        top: -750px;
+        left: 0;
+        z-index: 10099;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: 0.5s;
+    }
+    .menu-open{
+        top: 0;
+    }
+    header ul li{
+        transform: translateX(-30px);
+    }
+    header ul a{
+        font-size: 25px;
+        display: block;
+    }
+}
+
+@media (max-width: 720px){
+    section{
+        max-width: 100%;
+    }
+    section .hero{
+        max-width: 90%;
+        white-space: normal;
+    }
+
+    section .hero p{
+        max-width: 90%;
+    }
+
+    .image{
+        margin: 0;
+    }
+    .image img{
+        height: auto;
+        transform: translateX(-10%);
+    }
+
+    .sec2 .image{
+        margin: 0;
+    }
+    .sec2 .image img{
+        height: auto;
+        transform: translateX(-10%);
+    }
+}
+
+@media (max-width: 570px) {
+    section .hero p{
+        max-width: 50%;
+    }
+
+    .sec2 .hero h1{
+        font-size: 50px;
+    }
+
+    .image {
+        margin: 0;
+    }
+
+    .image img {
+        width: 250px;
+        height: auto;
+        transform: translateX(-70%);
+    }
+
+    .sec2 .image {
+        margin: 0;
+    }
+
+    .sec2 .image img {
+        width: 250px;
+        height: auto;
+        transform: translateX(-70%);
+    }
+}
